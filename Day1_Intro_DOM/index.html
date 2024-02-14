@@ -6,6 +6,9 @@
     <title>Document</title>
     <link rel="stylesheet" href="style/style.css">
     <style>
+        .fruits_container li{
+            color: tomato;    
+        }
         li{
             color:aqua;
         }
@@ -32,7 +35,7 @@
                 <li>DOM de re baba</li>
             </ul>    
         </section>
-        <section>
+        <section  class="fruits_container">
             <h1 id="fruits_id">Fruits i like</h1>
             <ul>
                 <li>Apple</li>
@@ -50,19 +53,30 @@
             </ul>
         </section>
         <script src="js/dom.js"></script>
-        <script>
+        <script> 
             // const liCollectiuon=document.getElementsByTagName('li');
             console.log('Hello World!');
             console.log("I love my mother");
-            // console.log(h1.innerText); 
+            // console.log(h1.innerText);
+            //option1: getElementsByTagName 
             const places=document.getElementsByClassName('importent_places');
             for(const place of places){
                 console.log(place.innerText);
             }
+            //option2: getElementsByClassName
+            //option3: getElementById
             const fruitsTitle= document.getElementById('fruits_id');
             fruitsTitle.innerText='Fruits Changed By JS';
-        </script>
+            //option4: querySelectorAll  
+            //option5: quarySelector  --> it will return the 1st element
+            const someLi=document.querySelectorAll('.fruits_container li')
+            for(const li of someLi){
+                console.log(li.innerText);
+            }
+        </script> 
     </main>
 </body>
 </html>
 <!--Document.getElementById("")-->
+<!--html collection(quarySelector) vs nodelist(quarySelectorAll)-->
+<!--for each vs for of-->
