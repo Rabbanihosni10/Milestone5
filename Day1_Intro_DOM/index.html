@@ -17,12 +17,13 @@
         }
         .importent_places{
             color: brown;
+            background-color: yellow;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>welsome to my DOM</h1>
+        <h1>welcome to my DOM</h1>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci placeat dignissimos, aut dolorem tempora consequuntur tenetur qui accusamus quasi itaque!</p>
     </header>
     <main>
@@ -36,14 +37,14 @@
             </ul>    
         </section>
         <section  class="fruits_container">
-            <h1 id="fruits_id">Fruits i like</h1>
+            <h1 id="fruits_id" class="fazal haque torab">Fruits i like</h1>
             <ul>
                 <li>Apple</li>
                 <li>Banana</li>
                 <li>CArrot</li>
             </ul>
         </section>
-        <section>
+        <section id="places-container" class="large-text">
             <h1 id="places_id">Places I Like to visit</h1>
             <ul>
                 <li class="importent_places">Shundorban</li>
@@ -73,7 +74,15 @@
             for(const li of someLi){
                 console.log(li.innerText);
             }
+            //console.log(document.querySelector());
+            //document.setAttribute('id/class')
+            //document.getElementsByClassName('fr uits_container')[0]
+            //document.getElementsByClassName('fruits_container')[0].innerHTML
+            //document.getElementsByClassName('fruits_container')[0].innerText
+            //in innerHTML every tags include comment tag can be seen
+            //while in innerText only existed tags txt are seen
         </script> 
+        <script src="js/styleJs.js"></script>
     </main>
 </body>
 </html>
