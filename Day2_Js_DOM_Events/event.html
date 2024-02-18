@@ -6,7 +6,35 @@
     <title>JS DOM Events</title>
 </head>
 <body>
-    <h1>DOM er ajke special event!</h1>
+    <h1 onclick="console.log('Oppai I am Clicked')">DOM er ajke special event!</h1>
+    <button title="This is a toolkit!" onclick="console.log(7)">Click Me!</button>
+    <button onclick="console.log(65)">Another Button!</button>
+    <br>
+    <!--Option1-->
+    <button onclick="document.body.style.backgroundColor='yellow'">Make Yellow</button>
+    <!--Option2-->
+    <button onclick="makeRed()">Make Red</button>
+    <br>
+    <button onclick="makeBlue()">Make Blue</button>
+    <!--Option3-->
+    <button id="make-orange">Make Orange</button>
+    <br>
+    <button onclick="makeYellow()">Make Yellow</button>
+    <button onclick="document.body.style.backgroundColor='tomato'">Make Tomato</button>
+    <br>
+    <button id="make-purple">Make Purple!</button>
     <script src="event.js"></script>
+    <script>
+        function makeRed(){
+            document.body.style.backgroundColor='red';
+        }
+        function makeBlue(){
+            document.body.style.backgroundColor='blue';
+        }
+        const purpleButton=document.getElementById('make-purple');
+        purpleButton.onclick=function makePurple(){
+            document.body.style.backgroundColor='purple';    
+        }
+    </script>
 </body>
 </html>
