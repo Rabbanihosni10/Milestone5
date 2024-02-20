@@ -32,18 +32,18 @@
         </ul>   
     </section>
     <script>
-        document.getElementById('item-2').addEventListener('click',function(evnet){
+        document.getElementById('item-2').addEventListener('click',function(event){
             console.log('Item-2 clicked!');
             //event.stopPropagation();
             event.stopImmediatePropagation();
         })
-        document.getElementById('item-2').addEventListener('click',function(evnet){
+        document.getElementById('item-2').addEventListener('click',function(event){
             console.log('Item-2  secound clicked!');
         })
-        document.getElementById('item-2').addEventListener('click',function(evnet){
+        document.getElementById('item-2').addEventListener('click',function(event){
             console.log('Item-2 Third clicked!');
         })
-        document.getElementById('item-2').addEventListener('click',function(evnet){
+        document.getElementById('item-2').addEventListener('click',function(event){
             console.log('Item-2 fourth clicked!');
         })
         document.getElementById('list-ul').addEventListener('click',function(){
