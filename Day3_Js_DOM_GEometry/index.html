@@ -9,7 +9,9 @@
 </head>
 <body class="m-4">
     <header>
-
+      <div class="border">
+        <h1>Interactice</h1>
+      </div>
     </header>
     <main>
         <!-- main content container -->
@@ -129,14 +131,14 @@
                           <p class="text-3xl text-center">a=<span>10</span>cm, b=<span>4</span>cm</p>
                         </div>
                         <div class="flex">
-                          <input type="text" class="w-24 text-2xl p-2 rounded-sm" placeholder="a">
+                          <input type="text" id="elipse-a" class="w-24 text-2xl p-2 rounded-sm" placeholder="a">
                           <span class="mr-4 ml-2">cm</span>
-                          <input type="text" class="w-24 text-2xl p-2 rounded-sm" placeholder="b">
+                          <input type="text" id="elipse-b" class="w-24 text-2xl p-2 rounded-sm" placeholder="b">
                           <span class="mr-4 ml-2">cm</span>
                         </div>
-                        <p class="text-2xl">Area: <span>0</span> <span>cm<sup>2</sup></span></p>
+                        <p class="text-2xl">Area: <span id="elipse-area">0</span> <span>cm<sup>2</sup></span></p>
                         <div class="card-actions justify-end">
-                          <button class="btn btn-primary w-full">Calculate</button>
+                          <button onclick="elipseCalculation()" class="btn btn-primary w-full">Calculate</button>
                         </div>
                     </div>
                 </div>
@@ -154,6 +156,7 @@
     <script src="scripts/rhombus.js"></script>
     <script src="scripts/pebtagon.js"></script>
     <script src="scripts/elipse.js"></script>  
+    <script src="scripts/combined.js"></script>
     <footer>
     </footer>
 </body>

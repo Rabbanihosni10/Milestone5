@@ -1,12 +1,12 @@
 /**
- * objective: get base hight of a triangle. calculate the area by using the provided formula and then display the area.
- * step1: get base value of the triangle
- * step2- added an id in the base inpuit field
- * step3: use getElementById to access the input field
- * step4: get value from the input field(value us string now)
- * step5: convert the value to a numbeer. Use parseFloat
- * 
-*/
+//  * objective: get base hight of a triangle. calculate the area by using the provided formula and then display the area.
+//  * step1: get base value of the triangle
+//  * step2- added an id in the base inpuit field
+//  * step3: use getElementById to access the input field
+//  * step4: get value from the input field(value us string now)
+//  * step5: convert the value to a numbeer. Use parseFloat
+//  * 
+// */
 console.log("Calculate");
 function calculateTriangleArea(){
     console.log("Inside Function!")
