@@ -87,15 +87,15 @@
                       <div>
                         <p class="text-3xl text-center">d<sub>1</sub>=<span>16</span>cm, d<sub>2</sub>=<span>8</span>cm</p>
                       </div>
-                      <div class="flex">
-                        <input type="text" class="w-24 text-2xl p-2 rounded-sm" placeholder="d1">
+                      <div class="flex gap-5">
+                        <input type="text" id="rhombus-d1" class="w-24 text-2xl p-2 rounded-sm" placeholder="d1">
                         <span class="mr-4 ml-2">cm</span>
-                        <input type="text" class="w-24 text-2xl p-2 rounded-sm" placeholder="d2">
+                        <input type="text" id="rhombus-d2" class="w-24 text-2xl p-2 rounded-sm" placeholder="d2">
                         <span class="mr-4 ml-2">cm</span>
                       </div>
-                      <p class="text-2xl">Area: <span>0</span> <span>cm<sup>2</sup></span></p>
+                      <p class="text-2xl">Area: <span id="rhombus-Area">0</span> <span>cm<sup>2</sup></span></p>
                       <div class="card-actions justify-end">
-                        <button class="btn btn-primary w-full">Calculate</button>
+                        <button onclick="rhombusCalculation()" class="btn btn-primary w-full">Calculate</button>
                       </div>
                     </div>
                 </div>
@@ -108,15 +108,15 @@
                       <div>
                         <p class="text-3xl text-center">p=<span>6</span>cm, b=<span>10</span>cm</p>
                       </div>
-                      <div class="flex">
-                        <input type="text" class="w-24 text-2xl p-2 rounded-sm" placeholder="p">
+                      <div class="flex gap-5">
+                        <input type="text" id="pentagon-p" class="w-24 text-2xl p-2 rounded-sm" placeholder="p">
                         <span class="mr-4 ml-2">cm</span>
-                        <input type="text" class="w-24 text-2xl p-2 rounded-sm" placeholder="b">
+                        <input type="text" id="pentagon-b" class="w-24 text-2xl p-2 rounded-sm" placeholder="b">
                         <span class="mr-4 ml-2">cm</span>
                       </div>
-                      <p class="text-2xl">Area: <span>0</span> <span>cm<sup>2</sup></span></p>
+                      <p class="text-2xl">Area: <span id="pentagon-area">0</span> <span>cm<sup>2</sup></span></p>
                       <div class="card-actions justify-end">
-                        <button class="btn btn-primary w-full">Calculate</button>
+                        <button onclick="pentagonCalculation()" class="btn btn-primary w-full">Calculate</button>
                       </div>
                     </div>
                 </div>
@@ -153,9 +153,8 @@
     <script src="scripts/parallelogram.js"></script>
     <script src="scripts/rhombus.js"></script>
     <script src="scripts/pebtagon.js"></script>
-    <script src="scripts/elipse.js"></script>
+    <script src="scripts/elipse.js"></script>  
     <footer>
-
     </footer>
 </body>
 </html>
