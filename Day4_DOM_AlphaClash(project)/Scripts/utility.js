@@ -25,7 +25,6 @@ function getARandomAlphabet(){
     //get a random index between 0-25 (Math.random())
     const randomNumber=Math.random()*25;
     const index=Math.round(randomNumber);
-    // console.log(index);
     const alphabet=alphabets[index];
     console.log(index,alphabet);
     return alphabet;
