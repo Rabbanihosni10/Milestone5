@@ -6,3 +6,7 @@
 .font-anton{
     font-family: "Anton", sans-serif;
 }
+#home-screen-btn:hover{
+    background: aqua;
+    color: black;
+}
