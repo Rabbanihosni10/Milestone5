@@ -20,11 +20,37 @@ function handleKeyboardButtonPress(event){
     if(playerPressed===expectedAlphabet){
         console.log("You got a point!");
         console.log('You have pressed correctly!',expectedAlphabet);
+        //update score:
+        //step1: get the current score
+        const currentScoreElement=document.getElementById('current-score');
+        const currentScoreText=currentScoreElement.innerText;
+        const currentScore=parseInt(currentScoreText);
+        console.log(currentScoreText);
+        //step2: increase the current score by 1
+        const newScore=currentScore+1;
+        //step3: show the updated score
+        currentScoreElement.innerText=newScore;
+
+        //start a new round
         removeBackgroundColorById(expectedAlphabet);
         continueGame();
     }
     else{
         console.log("Dhuro, right key press koren!");
+        //step1: get the current life number
+        const currentLifeElement=document.getElementById('current-life');
+        const currentLifeText=currentLifeElement.innerText;
+        const currentLife=parseInt(currentLifeText);
+        //step2: reduce the life count by -1
+        const newLife=currentLife-1;
+        //step3: display the updated life count
+        currentLifeElement.innerText=newLife;
+        if (newLife===0){
+            // console.log("Game Over!");
+            gameOver();
+
+        }
+
     }
 }
 function removeBackgroundColorById(elementId){
@@ -44,9 +70,32 @@ function continueGame(){
 }
 
 function play(){
+    //hide everything show only the playground
     hideElementById('home-screen');
+    hideElementById('final-score');
     showElementById('play-ground');
+    //reset score and life
     continueGame();
 }
+
+//showElementById('final-score');
+//hideElementById('play-ground);
 // const fairplay=document.getElementById("home-screen");
 //set background color
+
+function resetGame(){
+    const lifeLine=document.getElementById('current-life');
+    lifeLine.innerText=5;
+    const currrentScor=document.getElementById('current-score');
+    currrentScor.innerText=0;
+    removeBackgroundColorById(); 
+}
+
+
+function gameOver(){
+    showElementById('final-score');
+    hideElementById('play-ground');
+    continueGame();
+    resetGame();
+    
+}
