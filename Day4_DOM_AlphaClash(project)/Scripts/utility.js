@@ -5,7 +5,7 @@ function hideElementById(elementId){
 
 function showElementById(elementId){
     const element=document.getElementById(elementId);
-    element.classList.remove('hidden')
+    element.classList.remove('hidden');
 }
 
 function addBackgroundColorById(elementId){
@@ -13,10 +13,7 @@ function addBackgroundColorById(elementId){
     element.classList.add('bg-orange-400');
 }
 
-function removeBackgroundColorById(elementId){
-    const element=document.getElementById(elementId);
-    element.classList.remove('bg-orange-400');
-}
+
 function getARandomAlphabet(){
     //get or create an alphabet array
     const aplhabetString='abcdefghijklmnopqustuvwxyz';
